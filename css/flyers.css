@@ -176,12 +176,15 @@ h2 {
 
 .photo-group {
     position: relative;
+    padding-top: 30px;
 }
 
 .photo-group  .photo {
     position: relative;
     margin: 0 auto;
     display: table;
+    width: 110px;
+    height: 110px;
 }
 
 .photo-group .photo-label {
@@ -192,7 +195,7 @@ h2 {
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: absolute;
-    top: 50px;
+    top: 70px;
     left: 50px;
 }
 
@@ -204,8 +207,6 @@ h2 {
 
 .flyers-content-container {
     margin-bottom: 20px;
-    margin-right: 10px;
-    padding-right: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
