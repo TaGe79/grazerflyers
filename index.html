@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grazer Flyers</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <link href="flatui/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="flatui/css/flat-ui.css"/>
+    <link rel="stylesheet" href="css/fliers.css"/>
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+    <script src="flatui/js/html5shiv.js"></script>
+    <script src="flatui/js/respond.min.js"></script>
+    <script src="lib/jquery.min.js"/>
+    <![endif]-->
+
+    <link rel="import" href="partials/sidebar.html"/>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-01">
+                <span class="sr-only">Toggle navigation</span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-01">
+            <ul class="nav navbar-nav">
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                        class="fa fa-envelope fw fa-lg"> </span></a>
+
+                    <div class="dropdown-arrow"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="mailto:grazer-fliers@gmx.at">grazer-flyers@gmx.at</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                        class="fa fa-phone fw fa-lg"></span></a>
+
+                    <div class="dropdown-arrow"></div>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">+43 664 750 62817</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                        class="fa fa-user fw fa-lg"></span><b
+                        class="caret"></b></a>
+
+                    <div class="tooltip fade bottom in dropdown-menu" style="top: 40px; left: 0px; display: block;">
+                        <div class="tooltip-inner" style="top: 3px;">
+                            Pflastergasse 9/1
+                            8020 Graz
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#">About us</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- /.navbar-collapse -->
+</nav>
+<!-- /navbar -->
+<div class="container">
+    <div class="fliers-headline">
+        <h1 class="fliers-logo">
+            <div class="logo"></div>
+            <small>Verein zur professionellen Förderung von Kinder, Specials und Erwachsenen im Freizeit- und
+                Spitzensport
+            </small>
+        </h1>
+    </div>
+    <!-- headline -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8 col-xs-12">
+                <div class="row">
+                    <div class="col-md-4 col-xs-4 center-block">
+                        <img src="img/kids.jpg" alt="kids-image" class="img-rounded img-responsive img-thumbnail">
+                    </div>
+                    <div class="col-md-4 col-xs-4 center-block">
+                        <img src="img/specials.jpg" alt="specials-image"
+                             class="img-rounded img-responsive img-thumbnail">
+                    </div>
+                    <div class="col-md-4 col-xs-4 center-block">
+                        <img src="img/adults.jpg" alt="kids-image" class="img-rounded img-responsive img-thumbnail">
+                    </div>
+                </div>
+                <!-- /row -->
+                <div class="row" style="margin-top: 10px;">
+                    <div class="col-md-4 col-xs-4">
+                        <a href="#children-container" class="btn btn-block btn-lg btn-children">Kinder</a>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <a href="#specials-container" class="btn btn-block btn-lg btn-specials">Specials</a>
+                    </div>
+                    <div class="col-md-4 col-xs-4">
+                        <a href="#adults" class="btn btn-block btn-lg btn-adults">Erwachsenen</a>
+                    </div>
+                </div>
+                <!-- /row -->
+                <div class="row">
+                    <div class="col-md-offset-1 col-xs-11 fliers-big-top-margin">
+                        <h3>Wilkommen bei den Grazer Flyers!</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 fliers-main-info">
+                        <p class="lead">
+                            Der Rahmen unserer sportlichen Aktivitäten beinhaltet <span class="fliers-important-text">Eislaufschule, Eishockey, Inlineskaten, Stunt- und
+                    Speedskaten.</span> Hier finden Kinder ab 3 Jahren, Specials und Erwachsene Spaß an der Bewegung.
+                            Sportliche
+                            Orientierung im koordinativen und kognitiven Bereich sind unsere Schwerpunkte (individuelle
+                            Einzelförderung).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Children block -->
+                <div class="row"
+                     style="margin-top: 10px; margin-bottom: 5px; padding-bottom: 10px; background-color: rgba(255,20,0,0.5);"
+                     id="children-container">
+                </div>
+                <!-- Specials block -->
+                <div id="specials-container" class="row"
+                     style="margin-top: 10px; margin-bottom: 5px; background-color: rgba(0,20,255,0.5);">
+                </div>
+
+                <!-- Adults block -->
+                <div class="row"
+                     style="margin-top: 10px; margin-bottom: 5px; padding-bottom: 10px; background-color: rgba(0,255,20,0.5);"
+                     id="adults">
+                    <div class="col-md-offset-1 col-xs-4 fliers-big-top-margin">
+                        <h3>Erwachsenen</h3>
+                    </div>
+                    <div class="col-xs-2" style="margin-top: 60px;">
+                        <!-- TODO add three images in a circle -->
+                        <img class="img-circle" style="width: 120px; height: 120px;" src="img/specials.jpg"/>
+                    </div>
+                    <div class="col-xs-2" style="margin-top: 60px;">
+                        <!-- TODO add three images in a circle -->
+                        <img class="img-circle" style="width: 120px; height: 120px;" src="img/s01.png"/>
+                    </div>
+                    <div class="col-xs-2" style="margin-top: 60px;">
+                        <!-- TODO add three images in a circle -->
+                        <img class="img-circle" style="width: 120px; height: 120px;" src="img/s02.png"/>
+                    </div>
+                    <div class="col-xs-12 fliers-main-info">
+                        <p class="lead">
+                            Freizeitsportangebot in einem professionellen Rahmen für jeden, der Lust an Bewegung hat!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-4 col-md-4 sidebar" id="sidebar-container"></div>
+        </div>
+    </div>
+    <nav class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navbar-collapse-01">
+                <span class="nav navbar-brand nav">Wir vermitteln die Basis im Sport!</span>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </nav>
+</div>
+
+<!-- Load JS here for greater good =============================-->
+<script src="flatui/js/jquery-1.8.3.min.js"></script>
+<script src="flatui/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="flatui/js/jquery.ui.touch-punch.min.js"></script>
+<script src="flatui/js/bootstrap.min.js"></script>
+<script src="flatui/js/bootstrap-select.js"></script>
+<script src="flatui/js/bootstrap-switch.js"></script>
+<scritp src="flatui/js/bootstrap-transition.js"/>
+<script src="flatui/js/flatui-checkbox.js"></script>
+<script src="flatui/js/flatui-radio.js"></script>
+<script src="flatui/js/jquery.tagsinput.js"></script>
+<script src="flatui/js/jquery.placeholder.js"></script>
+<script src="flatui/js/jquery.stacktable.js"></script>
+<script src="http://vjs.zencdn.net/4.3/video.js"></script>
+<script src="flatui/js/application.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#sidebar-container').load('partials/sidebar.html');
+        $('#children-container').load('partials/children.html');
+        $('#specials-container').load('partials/specials.html');
+    });
+</script>
+</body>
+</html>
