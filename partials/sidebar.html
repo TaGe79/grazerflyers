@@ -1,0 +1,20 @@
+<div id=sidebar>
+    <ul class="nav nav-sidebar">
+        <li class="disabled">Themen</li>
+    </ul>
+    <ul class="nav nav-sidebar">
+        <!--<li><a class="fliers-nav-sidebar-item" href="#">Startseite</a></li>-->
+        <li><a id='sb-children-summer' class="fliers-nav-sidebar-item" href="#children-container">Kinder Sommer</a></li>
+        <li><a id='sb-children-winter' class="fliers-nav-sidebar-item" href="#children-container">Kinder Winter</a></li>
+        <li><a class="fliers-nav-sidebar-item" href="#specials-container">Specials</a></li>
+        <li><a class="fliers-nav-sidebar-item" href="#">Erwachsenen Sommer</a></li>
+        <li><a class="fliers-nav-sidebar-item" href="#">Erwachsenen Winter</a></li>
+        <li><a class="fliers-nav-sidebar-item" href="#">Sponsoren / Partner</a></li>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $('#sb-children-summer').on('click', function () {
+        $('#children-details-container').load('partials/children-summer.html');
+    });
+</script>

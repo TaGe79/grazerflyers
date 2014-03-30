@@ -1,0 +1,69 @@
+<div class="col-md-offset-1 col-xs-4 fliers-big-top-margin">
+    <h3>Kinder</h3>
+</div>
+<div class="col-xs-2 photo-group" style="margin-top: 60px;">
+    <a id='inline-btn' href="#fakelink">
+        <img id="inline-img" class="img-circle fliers-img-menu photo" style="width: 120px; height: 120px;"
+             src="img/I3.png"/>
+        <span id='inline-label' class="photo-label">Inline</span>
+    </a>
+</div>
+<div class="col-xs-2 photo-group" style="margin-top: 60px;">
+    <a id='stunt-btn' href="#fakelink">
+        <img id='stunt-img' class="img-circle fliers-img-menu photo" style="width: 120px; height: 120px;"
+             src="img/I5.jpg"/>
+        <span id='stunt-label' class="photo-label">Stunt</span>
+    </a>
+</div>
+<div class="col-xs-2 photo-group" style="margin-top: 60px;">
+    <a id='hockey-btn' href="#fakelink">
+        <img id='hockey-img' class="img-circle fliers-img-menu photo" style="width: 120px; height: 120px;"
+             src="img/I9.jpg"/>
+        <span id='hockey-label' class="photo-label">Hockey</span>
+    </a>
+</div>
+<div id='children-details-container' class="tab-content">
+    <div class="col-xs-12 fliers-main-info">
+        <p class="lead">
+            Das Spiel mit der Balance ist ein wichtiger Baustein in der Entwicklung - Sicherheit steht
+            an
+            erster Stelle! (sportliche, praäventive und paädagogische Schulung)
+        </p>
+    </div>
+    <div class="col-xs-offset-1 col-md-4 col-xs-4">
+        <a id='children-summer-btn' href="#fakelink" class="btn btn-block btn-lg btn-children"><span
+                class="fa fa-chevron-left fa-lg"/> &nbsp; Sommer</a>
+    </div>
+    <div class="col-xs-offset-2 col-md-4 col-xs-4">
+        <a href="#fakelink" class="btn btn-block btn-lg btn-children">Winter &nbsp; <span
+                class="fa fa-chevron-right fa-lg"/></a>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function photoBtnHoover(btn) {
+        $('#' + btn + '-btn').hover(function () {
+            console.log('foobar');
+            $('#' + btn + '-label').css('display', 'block');
+        }, function () {
+            $('#' + btn + '-label').css('display', 'none');
+        });
+
+        $('#' + btn + '-label').hover(function () {
+            $('#' + btn + '-img').addClass('flier-img-menu-hoover');
+        }, function () {
+            $('#' + btn + '-img').removeClass('flier-img-menu-hoover');
+        })
+
+    }
+
+    photoBtnHoover('inline');
+    photoBtnHoover('stunt');
+    photoBtnHoover('hockey');
+
+    $('#children-summer-btn').on('click', function (e) {
+        e.preventDefault();
+        $('#children-details-container').load('partials/children-summer.html');
+        $('#children-summer').addClass('in');
+    });
+</script>

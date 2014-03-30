@@ -1,0 +1,158 @@
+<div class="col-xs-2" style="margin-top: 60px;">
+    <!-- TODO add three images in a circle -->
+    <img class="img-circle" style="width: 120px; height: 120px;" src="img/specials.jpg"/>
+</div>
+<div class="col-xs-2" style="margin-top: 60px;">
+    <!-- TODO add three images in a circle -->
+    <img class="img-circle" style="width: 120px; height: 120px;" src="img/s01.png"/>
+</div>
+<div class="col-xs-2" style="margin-top: 60px;">
+    <!-- TODO add three images in a circle -->
+    <img class="img-circle" style="width: 120px; height: 120px;" src="img/s02.png"/>
+</div>
+<div class="col-md-offset-1 col-xs-4 fliers-big-top-margin">
+    <h3>Specials</h3>
+</div>
+<div class="col-xs-12 fliers-main-info">
+    <p class="lead">
+        Sportlerinnen und Sportler mit mentaler und mehrfacher Einschränkung. Schulung und Training
+        in koordinativen und sozialen Bereichen.
+    </p>
+    <blockquote>
+        <p>
+            "Die Ausübung von Sport ist ein Menschenrecht. Im Sinne des olympischen Gedankens muss
+            jeder Mensch die Möglichkeit zur Ausübung von Sport ohne Diskriminierung jeglicher Art
+            haben. Dies erfordert gegenseitiges Verstehen im Geist von Freundschaft, Solidarität und
+            Fairplay."
+        </p>
+        <small>– Auszug aus der <a style="color: inherit; text-decoration: underline;"
+                                   href="http://www.olympic.org/Documents/Olympic%20Charter/Charter_en_2010.pdf">Olympischen
+            Charta</a> (PDF, Englisch), übersetzt von Google
+        </small>
+    </blockquote>
+</div>
+<div class="col-xs-12" id="special-details-1" style="display: none;">
+    <h6>Sportlerinnen und Sportler mit mentaler und mehrfacher Einschränkung</h6>
+    Unsere sportlichen Aktivitäten im Bereich "Specials" erfolgen Sommer und Winter in Einzelbetreuung durch
+    ausgebildete Sportsonderpädagogen.
+
+    Für die Teilnahme an unserem Sportprogramm ist ein persönliches Gespräch und eine individuelle Vereinbarung
+    erforderlich.
+
+    Anmeldung und Beiträge erfahren Sie gerne persönlich (siehe Kontaktdaten rechts)
+</div>
+<div class="col-xs-12" id="special-details-2" style="display: none;">
+    <h6>Grazer Flyers bei Special Olympics Österreich</h6>
+    <table class="table">
+        <thead>
+        <tr>
+            <td>Wann</td>
+            <td>Sportart</td>
+            <td>Veranstalter</td>
+            <td>Wo</td>
+            <td>Infos</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>29./30.1.2014</td>
+            <td>Eisschnelllauf</td>
+            <td>Special Olympics</td>
+            <td>Innsbruck</td>
+            <td>1 Sportlerin</td>
+        </tr>
+        <tr>
+            <td>10.03.2014</td>
+            <td>Schwimmen</td>
+            <td>Special Olympics</td>
+            <td>Eisenstadt</td>
+            <td>1 Sportlerin</td>
+        </tr>
+        <tr>
+            <td>April 2014</td>
+            <td>Schwimmen</td>
+            <td>Special Olympics</td>
+            <td>Graz</td>
+            <td>1 Sportlerin</td>
+        </tr>
+        <tr>
+            <td>12.05.2014</td>
+            <td>Roller-Skaten</td>
+            <td>Grazer Flyers</td>
+            <td>Graz</td>
+            <td>rund 20 SportlerInnen</td>
+        </tr>
+        <tr>
+            <td>12.-17.6.2014</td>
+            <td>Schwimmen</td>
+            <td>Nationale Sommerspiele
+                "Herzschlag 2014"
+            </td>
+            <td>Klagenfurt</td>
+            <td>1 Sportlerin
+                http://www.herzschlag2014.at
+            </td>
+        </tr>
+        <tr>
+            <td>03.11.2014</td>
+            <td>Eisschnelllauf</td>
+            <td>Grazer Flyers</td>
+            <td>Graz</td>
+            <td>rund 20 SportlerInnen</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+<div class="col-xs-offset-5  col-xs-1" style="margin-bottom: 10px;">
+    <a href="#fakelink" id="spec-read-less" class="fa fa-chevron-up fa-lg fw"
+       style="display: none; color: rgb(255,255,255);"></a>
+    <a href="#fakelink" id="spec-read-more" class="fa fa-chevron-down fa-lg fw"
+       style="color: rgb(255,255,255);"></a>
+</div>
+<script type="text/javascript">
+    $(document).on('click', '#spec-read-more', function () {
+        if ($('#special-details-1').css('display') === 'none') {
+            $('#special-details-1').css('display', 'block');
+            $('#spec-read-less').css('display', 'block');
+            $('html, body').animate({
+                scrollTop: $('#special-details-1').offset().top
+            }, 500);
+        } else if ($('#special-details-2').css('display') === 'none') {
+            $('#special-details-2').css('display', 'block');
+            $('#spec-read-more').css('display', 'none');
+            $('html, body').animate({
+                scrollTop: $('#special-details-2').offset().top
+            }, 500);
+
+        } else {
+            $('#special-details-1').css('display', 'none');
+            $('#special-details-2').css('display', 'none');
+            $('#spec-read-less').css('display', 'none');
+            $('#spec-read-more').css('display', 'block');
+            $('html, body').animate({
+                scrollTop: $('#specials-container').offset().top
+            }, 500);
+        }
+    });
+    $(document).on('click', '#spec-read-less', function () {
+        if ($('#special-details-2').css('display') !== 'none') {
+            $('#special-details-2').css('display', 'none');
+            $('#spec-read-more').css('display', 'block');
+            $('html, body').animate({
+                scrollTop: $('#special-details-1').offset().top
+            }, 500);
+        } else if ($('#special-details-1').css('display') !== 'none') {
+            $('#special-details-1').css('display', 'none');
+            $('#spec-read-less').css('display', 'none');
+            $('html, body').animate({
+                scrollTop: $('#specials').offset().top
+            }, 500);
+        } else {
+            $('#spec-read-less').css('display', 'none');
+            $('#spec-read-more').css('display', 'block');
+            $('html, body').animate({
+                scrollTop: $('#specials-container').offset().top
+            }, 500);
+        }
+    });
+</script>
