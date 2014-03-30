@@ -1,19 +1,25 @@
-<div class="col-xs-2" style="margin-top: 60px;">
-    <!-- TODO add three images in a circle -->
-    <img class="img-circle" style="width: 120px; height: 120px;" src="img/specials.jpg"/>
+<div class="col-xs-2 photo-group">
+    <a id='spec-achievements-btn' href="#fakelink">
+        <img id='spec-achievements-img' class="img-circle photo" src="img/specials.jpg"/>
+        <span id='spec-achievements-label' class="photo-label">Erfolge</span>
+    </a>
 </div>
-<div class="col-xs-2" style="margin-top: 60px;">
-    <!-- TODO add three images in a circle -->
-    <img class="img-circle" style="width: 120px; height: 120px;" src="img/s01.png"/>
+<div class="col-xs-2 photo-group">
+    <a id='spec-winter-btn' href="#fakelink">
+        <img id='spec-winter-img' class="img-circle photo" src="img/s01.png"/>
+        <span id='spec-winter-label' class="photo-label">Winter</span>
+    </a>
 </div>
-<div class="col-xs-2" style="margin-top: 60px;">
-    <!-- TODO add three images in a circle -->
-    <img class="img-circle" style="width: 120px; height: 120px;" src="img/s02.png"/>
+<div class="col-xs-2 photo-group">
+    <a id='spec-summer-btn' href="#fakelink">
+        <img id='spec-summer-img' class="img-circle photo" src="img/s02.png"/>
+        <span id='spec-summer-label' class="photo-label">Sommer</span>
+    </a>
 </div>
-<div class="col-xs-offset-1 col-xs-3 fliers-big-top-margin">
+<div class="col-xs-offset-1 col-xs-3 flyers-big-top-margin">
     <h3>Specials</h3>
 </div>
-<div class="col-xs-12 fliers-main-info">
+<div class="col-xs-12 flyers-main-info tab-content" style="margin-top: 50px;">
     <p class="lead">
         Sportlerinnen und Sportler mit mentaler und mehrfacher Einschränkung. Schulung und Training
         in koordinativen und sozialen Bereichen.
@@ -113,6 +119,10 @@
        style="color: rgb(255,255,255);"></a>
 </div>
 <script type="text/javascript">
+    photoBtnHoover('spec-achievements');
+    photoBtnHoover('spec-winter');
+    photoBtnHoover('spec-summer');
+
     $(document).on('click', '#spec-read-more', function () {
         if ($('#special-details-1').css('display') === 'none') {
             $('#special-details-1').css('display', 'block');

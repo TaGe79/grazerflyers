@@ -176,7 +176,7 @@ h2 {
 
 .photo-group {
     position: relative;
-    padding-top: 30px;
+    padding-top: 60px;
 }
 
 .photo-group  .photo {
@@ -191,12 +191,12 @@ h2 {
     z-index: 0;
     display: none;
     font-weight: 800;
-    font-size: large;
+    font-size: larger;
     text-decoration: none;
     color: rgb(255, 255, 255);
     position: absolute;
     top: 70px;
-    left: 50px;
+    width: auto;
 }
 
 .carousel-photo {
