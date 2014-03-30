@@ -1,7 +1,7 @@
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1024 !important;
+    width: 1280 !important;
 }
 
 .flyers-headline {
@@ -203,7 +203,9 @@ h2 {
 }
 
 .flyers-content-container {
-    margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
