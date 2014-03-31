@@ -107,14 +107,16 @@
             <div id="main-content" class="col-md-8 col-xs-12" style="display: block;">
                 <div class="row">
                     <div class="col-md-4 col-xs-4 center-block">
-                        <img src="img/kids.jpg" alt="kids-image" class="img-rounded img-responsive img-thumbnail">
+                        <a href="#children-container"><img src="img/kids.jpg" alt="kids-image"
+                                                           class="img-rounded img-responsive img-thumbnail"></a>
                     </div>
                     <div class="col-md-4 col-xs-4 center-block">
-                        <img src="img/specials.jpg" alt="specials-image"
-                             class="img-rounded img-responsive img-thumbnail">
+                        <a href="#children-container"><img src="img/specials.jpg" alt="specials-image"
+                                                           class="img-rounded img-responsive img-thumbnail"></a>
                     </div>
                     <div class="col-md-4 col-xs-4 center-block">
-                        <img src="img/adults.jpg" alt="kids-image" class="img-rounded img-responsive img-thumbnail">
+                        <a href="#children-container"><img src="img/adults.jpg" alt="kids-image"
+                                                           class="img-rounded img-responsive img-thumbnail"></a>
                     </div>
                 </div>
                 <!-- /row -->
@@ -202,7 +204,7 @@
             $('#' + btn + '-label').css('display', 'block');
             $('#' + btn + '-img').addClass('flier-img-menu-hoover');
             var labelWidth = ($('#' + btn + '-label').width() + 1);
-            $('#' + btn + '-label').css('left', 70 - (labelWidth/2)+'px' );
+            $('#' + btn + '-label').css('left', 70 - (labelWidth / 2) + 'px');
         }, function () {
             $('#' + btn + '-label').css('display', 'none');
             $('#' + btn + '-img').removeClass('flier-img-menu-hoover');
